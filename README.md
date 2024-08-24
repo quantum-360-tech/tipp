@@ -72,16 +72,20 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 To quickly install Composer in the current directory, run the following script in your terminal:
 
+```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php -r "if (hash_file('sha384', 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
+```
 
 ### Verify Installation
 
 To verify Composer is installed correctly, run:
 
+```bash
 composer --version
+```
 
 For more information, visit the https://getcomposer.org/download/
 
@@ -89,19 +93,26 @@ For more information, visit the https://getcomposer.org/download/
 
 Follow these steps to set up the project:
 
-1. Install dependencies:
-   composer install
-3. Copy the example environment file:
-   cp .env.example .env
-5. Generate the application key:
-   php artisan key:generate
+  ```bash
+composer install
+```
+
+```bash
+cp .env.example .env
+```
+
+```bash
+php artisan key
+
+```
 
 ## Running the Server
 
 To start the local development server, run the following command in the root directory of the application:
 
+```bash
 php artisan serve
-
+```
 
 
 
