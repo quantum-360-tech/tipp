@@ -96,6 +96,10 @@ Follow these steps to set up the project:
   ```bash
 composer install
 ```
+  ```bash
+composer require livewire/livewire
+
+```
 
 ```bash
 cp .env.example .env
