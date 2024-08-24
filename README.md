@@ -62,3 +62,46 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Requirements
+
+* PHP Version: 7.4.3
+* Composer: For dependency management
+
+## Download Composer
+
+To quickly install Composer in the current directory, run the following script in your terminal:
+
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
+### Verify Installation
+
+To verify Composer is installed correctly, run:
+
+composer --version
+
+For more information, visit the https://getcomposer.org/download/
+
+## Project Setup
+
+Follow these steps to set up the project:
+
+1. Install dependencies:
+   composer install
+3. Copy the example environment file:
+   cp .env.example .env
+5. Generate the application key:
+   php artisan key:generate
+
+## Running the Server
+
+To start the local development server, run the following command in the root directory of the application:
+
+php artisan serve
+
+
+
+
